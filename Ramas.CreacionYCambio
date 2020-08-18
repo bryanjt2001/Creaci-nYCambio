@@ -1,0 +1,48 @@
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git branch
+* master
+  pruebas
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git branch ramaNueva
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git branch
+* master
+  pruebas
+  ramaNueva
+  C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama> git checkout ramanueva
+Switched to branch 'ramanueva'
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>type Archivo1.txt
+Inserto una l├¡nea en el archivo
+Inserto otra nueva lina al archivo
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git status
+On branch ramanueva
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Archivo1.txt
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git add .
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git status
+On branch ramanueva
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Archivo1.txt
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git commit -am "Añadi una segunda linea"
+[ramanueva e19d4d6] Añadi una segunda linea
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ 
+ :\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git log --oneline
+e19d4d6 (HEAD -> ramanueva) A<C3><B1>adi una segunda linea
+eb62a91 (master) A<C3><B1>ado un nuevo texto
+a9277fe A<C3><B1>ado el archivo2
+8946784 A<C3><B1>ado el archivo1
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git checkout master
+Switched to branch 'master'
+
+C:\Users\Bryan Jácome Tumbaco\Desktop\Nueva carpeta\proyectorama>git log --oneline
+eb62a91 (HEAD -> master) A<C3><B1>ado un nuevo texto
+a9277fe A<C3><B1>ado el archivo2
+8946784 A<C3><B1>ado el archivo1
